@@ -1,7 +1,4 @@
 
-from email.policy import default
-
-
 # positional,default and keyword arguments
 def yearOfBirth(name,age):
     print(f"Hello{name}you were born in{age}")
@@ -11,8 +8,11 @@ def my_country(country="Kenya"):
 
 # //forms a list
 def   write(*names):
+    nam=''
     for name in names:
-        print(f"Hello {name}")
+        return(f"Hello {name}")
+
+        
         
 #  adds many numbers
 def add(*nums):
@@ -20,6 +20,7 @@ def add(*nums):
     for num in nums:
         sum += num
     return sum
+    
 def multiply(**kwargs):
     answer=1
     for number in kwargs.values():
