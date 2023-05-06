@@ -11,13 +11,16 @@ def odd_numbers():
     if i%2!=0:
         print(i)     
 
+
 def divisible_by_five():
     x=range(50)
     for i in x:
         if i%5==0:
             print(f"{i} is divisible by 5")
         else:
-            print(f"{i} is not divisible by 5")     
+            print(f"{i} is not divisible by 5")   
+
+
 def multiple_numbers():
     x=range(50) 
     for i in x:
@@ -89,8 +92,10 @@ def prime_number(num):
 def sum_integers(*numbers):
     sum=0
     for number in numbers:
-        sum+=number
-    print(sum)          
+        if number%2==0:
+         sum+=number
+    print(sum)  
+sum_integers(3,4,5,6,78,)            
 
 #  //quiz4
 def divisible_by_three(a,b):
@@ -100,5 +105,62 @@ def divisible_by_three(a,b):
      if i % 3==0:
       sum += i
     print(sum)
+divisible_by_three(3,10)    
+    
+    # revision
+def divisible_by_seven():
+     x=range (100,200)
+     empty_array=[]
+     for i in x:
+      if i %7==0:
+       empty_array.append(i)
+     return empty_array
+print(divisible_by_seven())       
 
 
+def divisible_by_seven():
+     x=range (100,200)
+     empty_array=[i for i in x if i%7==0]
+     return empty_array
+print(divisible_by_seven())       
+
+# Average
+def calculate_average():
+    sum=0
+    a=range(50,100)
+    for i in a:
+        sum+=i
+    avg=sum/len(a)
+    return avg
+print(calculate_average())
+
+# //Prime numbers
+
+# start=1
+# while (start <=10):
+#     if(start>2):
+#         i=2
+#         if(start % i==0):
+#             print("not prime")
+#             i+=1
+#             break
+#         else:
+#             print("prime")
+
+def prime_number(num):
+    if num <2:
+        return False
+    for i in range (2,num):
+      if(num%i==0):
+         return False
+    return True
+num=0  
+while(num<=10):
+    if prime_number(num):  
+        print(num)     
+    num+=1 
+
+
+        
+
+   

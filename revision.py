@@ -66,4 +66,51 @@ def racecar(t):
 racecar("racecar")     
 
 
+# Membership
+def word(*words):
+     c="Regina" in words
+     print(c)
+word("Regina","Aluel","Vero")
+
+
+# //sum of numbers
+def num(*nums):
+     total=0
+     for num in nums:
+      total+=1
+      return total
+print(num(2,3,56,7,8))
+
+def  date_of_birth(now,then) :   
+     age=now-then
+     return age
+print(date_of_birth(2023,1999))
+
+# //even or not even
+def is_even(n):
+     if n %2==0:
+          print('even')
+          return True
+     return False     
+print(is_even(10)) 
+print(is_even(5))  
+
+# //find even numbers
+def find_even_numbers(n):
+     evens=[]
+     for i in  range(n+1):
+          if i % 2 ==0:
+               evens.append(i)
+     return evens
+print(find_even_numbers(20))               
+
+    # square of numbers
+def square_numbers():
+     nums=[2,4,5,6]
+     for i in nums: 
+          print (i**2)
+square_numbers()
+         
+
+
 
