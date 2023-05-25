@@ -20,6 +20,7 @@ class Student:
         return f"My name is {self.first_name}  {self.last_name}"
 
     def year_of_birth(self):
+        # datetime.now
         current_year=date.today().year
         return current_year-self.age
 

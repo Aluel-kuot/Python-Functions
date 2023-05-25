@@ -6,12 +6,14 @@ class Fruit:
         self.taste=taste
         self.name=name
 
-    def wash(self):
-        return f"The {self.name} has been washed "   
+        # ripen,decolour,rot,grow,germinate
 
-    def store(self):
-        return f"The {self.color} {self.taste} {self.name} has been eaten  "  
-    def pill(self):
-        return f"The {self.color}  {self.name} has been pilled "    
+    # def wash(self):
+    #     return f"The {self.name} has been washed "   
+
+    # def store(self):
+    #     return f"The {self.color} {self.taste} {self.name} has been eaten  "  
+    # def pill(self):
+    #     return f"The {self.color}  {self.name} has been pilled "    
      
      

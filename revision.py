@@ -112,5 +112,23 @@ def square_numbers():
 square_numbers()
          
 
+def set_numbers():
+     a={1,2,3,4}
+     b={2,5,3,1}
+     print (a.difference(b))  
+set_numbers()
 
-
+def smallest():
+     c=[3,5,7,8,9]
+     print(min(c))
+smallest()    
+def occurrence():
+     days=["Monday","Tuesday","Monday"]
+     v=days.count("Monday")
+     print(v)
+occurrence()     
+     
+def smallest():  
+     small=[3,6,2,4,1,5,7]  
+     print(min(small))
+smallest()     
