@@ -63,7 +63,8 @@ class BankAccount:
 
     def borrow_loan(self, amount):
         if self.loan_balance > 0:
-            return("Account has outstanding loan")
+            return f"Account has outstanding loan of{self.balance}"
+
         if amount < 100:
             return f"Loan amount must be more than 100"
 
@@ -74,9 +75,13 @@ class BankAccount:
         self.loan_balance += amount
     def repay_loan(self, amount):
         if self.loan_balance < amount:
+            self.balance += amount-self.loan_balance
+            self.loan_balance-()
             return f"Loan amount is more than outstanding loan"
-        self.loan_balance -= amount
-        self.balance += amount
+        else:
+            self.loan_balance -= amount
+            return f"You have repaid {amount} of your loan Your new balance is {self.balance}"
+            
     def transfer(self, amount, account):
         if amount > self.balance:
             return f"Insufficient funds. Your current balance is {self.balance}"
